@@ -82,7 +82,7 @@ The script ends with a **bar chart** showing the F1-scores for both models:
 
 ### Install dependencies:
 ```bash
-pip install pandas scikit-learn matplotlib
+pip install requirements.txt
 ```
 
 ### Run classifier
