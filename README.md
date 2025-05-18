@@ -53,10 +53,10 @@ The comparison focuses on how well each model predicts the **diabetic class (Out
 
 ## 📈 Results
 
-| Model               | F1 Score (Diabetic Class) |
-|---------------------|---------------------------|
+| Model              | F1 Score (Diabetic Class) |
+|-------------------|---------------------------|
 | Logistic Regression | ~0.67                     |
-| Random Forest       | ~0.71 ✅                  |
+| Random Forest       | ~0.71 ✅                   |
 
 📌 Random Forest slightly outperformed logistic regression, especially in **recall** for detecting diabetic patients.
 
@@ -64,28 +64,22 @@ The comparison focuses on how well each model predicts the **diabetic class (Out
 
 ## 📊 Visualization
 
-The script ends with a **bar chart** showing the F1-scores for both models:
-
-![F1 Score Comparison](f1_score_chart.png)
+The F1-score comparison is visualized as a bar chart and can be viewed either in a terminal-based matplotlib window or interactively via Streamlit.
 
 ---
 
-## 🧠 Key Takeaways
+## 🧠 Streamlit Support
 
-- Logistic Regression is easy to interpret and a strong baseline.
-- Random Forest (with tuning) improved recall for the diabetic class without overfitting.
-- The dataset is small, so results are best treated as a **prototype** — not medically actionable.
+This project includes a Streamlit web interface to train models and display results interactively.
 
----
-
-## ▶️ Running the Project
-
-### Install dependencies:
+### ▶️ To run locally with Streamlit:
 ```bash
-pip install requirements.txt
+pip install -r requirements.txt
+streamlit run app_streamlit.py
 ```
 
-### Run classifier
+### 💻 To run in terminal:
 ```bash
-py diabetes_predictor.py
+pip install -r requirements.txt
+python app_console.py
 ```
