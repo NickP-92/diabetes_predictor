@@ -83,3 +83,6 @@ streamlit run app_streamlit.py
 pip install -r requirements.txt
 python app_console.py
 ```
+
+### 🌐 Live Demo:
+[Launch the Streamlit App](https://nic-diabetespredictor.streamlit.app/)
